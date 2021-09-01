@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/tailnode-todo-assignment/static/css/main.e7afa44f.chunk.css",
+    "main.js": "/tailnode-todo-assignment/static/js/main.279ecd74.chunk.js",
+    "main.js.map": "/tailnode-todo-assignment/static/js/main.279ecd74.chunk.js.map",
+    "runtime-main.js": "/tailnode-todo-assignment/static/js/runtime-main.80351b65.js",
+    "runtime-main.js.map": "/tailnode-todo-assignment/static/js/runtime-main.80351b65.js.map",
+    "static/js/2.404beacd.chunk.js": "/tailnode-todo-assignment/static/js/2.404beacd.chunk.js",
+    "static/js/2.404beacd.chunk.js.map": "/tailnode-todo-assignment/static/js/2.404beacd.chunk.js.map",
+    "static/js/3.ae837f3e.chunk.js": "/tailnode-todo-assignment/static/js/3.ae837f3e.chunk.js",
+    "static/js/3.ae837f3e.chunk.js.map": "/tailnode-todo-assignment/static/js/3.ae837f3e.chunk.js.map",
+    "index.html": "/tailnode-todo-assignment/index.html",
+    "static/css/main.e7afa44f.chunk.css.map": "/tailnode-todo-assignment/static/css/main.e7afa44f.chunk.css.map",
+    "static/js/2.404beacd.chunk.js.LICENSE.txt": "/tailnode-todo-assignment/static/js/2.404beacd.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80351b65.js",
+    "static/js/2.404beacd.chunk.js",
+    "static/css/main.e7afa44f.chunk.css",
+    "static/js/main.279ecd74.chunk.js"
+  ]
+}
