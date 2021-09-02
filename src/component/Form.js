@@ -13,35 +13,35 @@ const Form = ({
   const inputTextHandler = (e) => {
     // console.log(e.target.value);
     setInputText(e.target.value);
-
-    // to implement multiple search words
-    // let searchWordArray = [];
-    // const searchedWords = e.target.value.split(' ');
-    // console.log(searchedWords);
-
-    // searchedWords.forEach((text) => {
-    //   searchWordArray.push(text.slice(1));
-    //   console.log(searchWordArray);
-    // });
+    setStatus('all');
 
     const hashtag = e.target.value[0];
     if (hashtag === '#') {
+      // to implement multiple search words
+      let searchWordsArr = [];
+      const searchWords = e.target.value.split(' ');
+      // console.log(searchWords);
+
+      searchWords.forEach((searchWord) => {
+        searchWordsArr.push(searchWord.slice(1));
+        // console.log(searchWordsArr);
+      });
+
       setSearchedArray([]);
-      const searchedWord = e.target.value.slice(1);
-      todos.map((todo) =>
-        todo.text.split(' ').forEach((word) => {
-          if (word === searchedWord) {
-            // console.log(todo);
-            const array = todos.filter((el) => el.id === todo.id);
-            // console.log(array);
-            searchedArray = [...searchedArray, ...array];
-            setSearchedArray(searchedArray);
-            console.log(searchedArray);
-          }
-        })
-      );
+      todos.forEach((todo) => {
+        const todoArr = todo.text.split(' ');
+        // console.log(todoArr);
+        if (searchWordsArr.every((ele) => todoArr.includes(ele))) {
+          const array = todos.filter((el) => el.id === todo.id);
+          // console.log(array);
+          searchedArray = [...searchedArray, ...array];
+          setSearchedArray(searchedArray);
+          // console.log(searchedArray);
+        }
+      });
 
       if (searchedArray.length) {
+        // console.log('loop', searchedArray);
         setStatus('search');
       }
     } else {

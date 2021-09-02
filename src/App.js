@@ -19,7 +19,7 @@ function App() {
         setFilteredTodos(todos.filter((todo) => todo.completed === false));
         break;
       case 'search':
-        console.log(searchedArray);
+        // console.log(searchedArray);
         setFilteredTodos(searchedArray);
         break;
       default:
